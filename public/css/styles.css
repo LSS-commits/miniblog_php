@@ -1,0 +1,239 @@
+/***** GLOBAL STYLES *****/
+:root{
+    --darkgrey: #454545;
+    --lightgrey: #dedede;
+    --matblack: #171717;
+    --ivorywhite: #fffff0;
+    --lightlinen: #faf5ef;
+    --violet: #617cbe;
+    --orange: #ffa500;
+    --red: #cc0000;
+    --darkgreen: #007e33;
+    --brightgreen: #17B169
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--darkgrey)
+}
+noscript{
+    color: var(--orange)
+}
+h1, h2, h3, h4, h5, h6, .backToTop{
+    font-family: 'Poppins', sans-serif;
+    color: var(--matblack)
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    color: inherit
+}
+a::after{
+    display: block;
+    height: 2px
+}
+
+/* MUTUAL */
+a::after, details summary::-webkit-details-marker, details summary::marker{
+    content: ""
+}
+.backToTop, .hamburger, .hamburgerNav, form .error-message, .header-logo-anchor::after, details summary::-webkit-details-marker, details summary::marker{
+    display: none
+}
+header nav ul li, .breadcrumb li, .actions details, .arrow-up{
+    display: inline-block
+}
+header nav, footer, .articles, .hamburgerNav li, .form-fields{
+    display: flex
+}
+header nav, footer{
+    align-items: center
+}
+footer, .articles{
+    justify-content: center
+}
+header nav {
+    justify-content: space-between
+}
+footer, .backToTop, .hamburger{
+    position: fixed
+}
+header nav ul li, .article-cards p{
+    width: max-content
+}
+main{
+    margin: 10px 20px;
+    padding-bottom: 140px
+}
+header nav, header nav img, header nav ul, header nav ul li, .breadcrumb, .breadcrumb li, footer img, footer p{
+    margin: 0 10px
+}
+.article-single, .article-cards p{
+    margin: 0 auto
+}
+header, footer, .article-single{
+    padding: 20px 0
+}
+header nav ul, .breadcrumb, .hamburgerNav ul{
+    padding: 0
+}
+.article-cards div, .article-single div, .actions div{
+    padding: 10px 0
+}
+.hamburgerIcon, .usernavIcon, .hamburgerNav li{
+    padding: 10px
+}
+.backToTop, .hamburgerIcon, .violet-btn, a::after{
+    background-color: var(--violet)
+}
+footer{
+    background-color: var(--darkgrey)
+}
+.backToTop, .violet-btn, .hamburgerIcon::before{
+    color: var(--ivorywhite)
+}
+main, .backToTop{
+    text-align: center
+}
+noscript, .backToTop, form label, .hamburgerIcon::before{
+    font-weight: 700
+}
+.border, form input, form textarea{
+    border-radius: 3px
+}
+.backToTop, .hamburger{
+    z-index: 99
+}
+.backToTop, .hamburgerIcon, .usernavIcon, .violet-btn, .showpw-field input{
+    cursor: pointer
+}
+/* END MUTUAL */
+
+/* HEADER */
+header{
+    background-color: var(--lightlinen)
+}
+.header-logo{
+    height: 40px
+}
+/* END HEADER */
+
+/* FOOTER */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%
+}
+footer p{
+    color: var(--lightgrey)
+}
+.footer-logo{
+    height: 25px
+}
+/* END FOOTER */
+
+/* BACK TO TOP ANCHOR */
+.backToTop{
+    height: 30px;
+    width: 30px;
+    bottom: 100px; 
+    right: 10px; 
+    font-size: 2rem
+}
+/* END BACK TO TOP ANCHOR */
+
+/* HAMBURGER NAV */
+.hamburger{
+    top: 50px; 
+    left: 10px; 
+    opacity: .5;
+    transition: .3s ease-in-out
+}
+.hamburgerNav{
+    background-color: var(--lightgrey)
+}
+.hamburger:hover{
+    opacity: 1
+}
+.hamburgerIcon::before{
+    content: "\2630";
+    font-size: 1.5rem
+}
+/* END HAMBURGER NAV */
+
+/* BLOG PAGE */
+.articles{
+    flex-wrap: wrap;
+    margin: 30px 10px
+}
+.article-cards{
+    padding: 20px;
+    max-width: 30%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px var(--lightgrey)
+}
+/* END BLOG PAGE */
+
+/* ARTICLE PAGE */
+.article-single{
+    width: 60%
+}
+.breadcrumb{
+    opacity: .8;
+    font-size: .8rem
+}
+.violet-btn{
+    border: none;
+    padding: 5px 8px;
+    box-shadow: 1px 1px 1px var(--darkgrey)
+}
+.actions summary{
+    margin-bottom: 10px
+}
+.actions-icon{
+    margin-bottom: -5px;
+    filter: invert(.3)
+}
+/* END ARTICLE PAGE */
+
+/* FORMS */
+.form-fields{
+    flex-direction: column;
+    padding: 0 20px
+}
+form label, form input, form textarea, form button{
+    margin: 5px 0
+}
+form input, form textarea{
+    border: 1px solid var(--lightgrey)
+}
+.showpw-field {
+    text-align: left;
+    margin: 10px 0
+}
+.showpw-field label{
+    font-size: .9rem
+}
+form .error-message{
+    font-weight: 700;
+    color: var(--red)
+}
+.form-btn{
+    opacity: .6;
+    cursor: no-drop
+}
+/* END FORMS */
+
+/* 404 PAGE */
+.not-found-img{
+    filter: invert(1)
+}
+/* END 404 PAGE */
+
+/* TODO: USERNAV */
+.usernavIcon{
+    background-color: var(--violet);
+    padding: 8px 2px;
+    font-size: 2rem
+}
+/* END USERNAV */

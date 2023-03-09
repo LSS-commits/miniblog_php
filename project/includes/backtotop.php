@@ -1,0 +1,1 @@
+<div id="backToTopId" class="backToTop border" title="Go to top">^</div>
