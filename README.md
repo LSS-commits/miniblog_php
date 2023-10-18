@@ -1,5 +1,5 @@
 # PHP Mini Blog #
-A mini-blog using HTML5, CSS, PHP and a MySQL database.
+A mini-blog using HTML5, CSS, Javascript, PHP and a MySQL database.
 
 ![Blog page](https://github.com/LSS-commits/miniblog_php/blob/main/blog_page.PNG?raw=true)
 
